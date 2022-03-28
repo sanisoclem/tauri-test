@@ -1,0 +1,20 @@
+{
+  "name": "tauri-app",
+  "scripts": {
+    "tauri": "tauri",
+    "build": "rimraf dist/js && rollup --config",
+    "start": "rimraf dist/js && rollup --config --watch"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.7",
+    "@wasm-tool/rollup-plugin-rust": "^1.0.6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.50.2",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-rc.2"
+  }
+}
